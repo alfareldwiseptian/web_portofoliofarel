@@ -117,45 +117,57 @@
   </nav>
 
   <!-- HERO SECTION -->
-  <section id="home" class="min-h-screen flex items-center justify-center pt-24 pb-12 px-6 relative">
-    <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+  <section id="home" class="min-h-screen flex items-center justify-center pt-28 pb-12 px-6 relative">
+    <div class="max-w-6xl mx-auto w-full grid lg:grid-cols-2 gap-12 items-center">
       
-      <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold text-white tracking-tight leading-tight mb-4">
-        Halo, Saya <br class="sm:hidden" />
-        <span class="text-gradient">Mochamad Al Farel</span>
-      </h1>
+      <!-- Kolom Kiri -->
+      <div data-aos="fade-right" class="space-y-6 text-center lg:text-left">
+        <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
+          Halo, Saya <br />
+          <span class="text-gradient">Mochamad Al Farel</span>
+        </h1>
 
-      <div class="text-xl sm:text-2xl font-medium text-gray-300 mb-6 h-8">
-        Saya seorang <span id="typed-text" class="text-cyan-400 font-semibold"></span>
+        <div class="text-xl sm:text-2xl font-medium text-gray-300 h-8">
+          Saya seorang <span id="typed-text" class="text-cyan-400 font-semibold"></span>
+        </div>
+
+        <p class="text-gray-400 text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
+          Lulusan terbaru Web Developer dari SMKN 1 Kawali. Memiliki fokus kuat dalam membangun aplikasi web dinamis dan merancang arsitektur backend yang efisien.
+        </p>
+
+        <div class="flex flex-wrap justify-center lg:justify-start gap-4 pt-2">
+          <a href="#projects" class="px-8 py-3.5 text-sm font-bold text-black bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 rounded-xl shadow-[0_0_20px_rgba(0,242,254,0.4)] transition-all transform hover:-translate-y-1">
+            Lihat Proyek <i class="fa-solid fa-arrow-down ml-2"></i>
+          </a>
+          <a href="#contact" class="px-8 py-3.5 text-sm font-bold text-white glass-card hover:bg-white/10 rounded-xl transition-all transform hover:-translate-y-1">
+            Kontak Saya
+          </a>
+        </div>
       </div>
 
-      <p class="text-gray-400 max-w-2xl mx-auto text-base sm:text-lg mb-8 leading-relaxed">
-        Siswa Rekayasa Perangkat Lunak (RPL) di SMK Negeri 1 Kawali yang memiliki minat dan bakat dalam bidang pengembangan website (Web Development).
-      </p>
-
-      <div class="flex flex-wrap justify-center gap-4">
-        <a href="#projects" class="px-8 py-3.5 text-sm font-bold text-black bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 rounded-xl shadow-[0_0_20px_rgba(0,242,254,0.4)] transition-all transform hover:-translate-y-1">
-          Lihat Karya <i class="fa-solid fa-arrow-down ml-2"></i>
-        </a>
-        <a href="#contact" class="px-8 py-3.5 text-sm font-bold text-white glass-card hover:bg-white/10 rounded-xl transition-all transform hover:-translate-y-1">
-          Kirim Pesan
-        </a>
+      <!-- Kolom Kanan: Foto Profil Lingkaran Merah -->
+      <div data-aos="fade-left" class="flex justify-center items-center">
+        <div class="relative w-72 h-72 sm:w-80 sm:h-80 rounded-full p-2 bg-gradient-to-tr from-cyan-400 to-purple-600 shadow-[0_0_35px_rgba(0,242,254,0.3)]">
+          <div class="w-full h-full rounded-full bg-red-600 overflow-hidden flex items-center justify-center border-4 border-[#0a0f1d]">
+            <img src="fhoto.jpeg" alt="Mochamad Al Farel" class="w-full h-full object-cover object-top" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80'">
+          </div>
+        </div>
       </div>
+
     </div>
   </section>
 
-  <!-- ABOUT SECTION & PHOTO GALLERY -->
+  <!-- ABOUT SECTION & 4 PHOTO GALLERY -->
   <section id="about" class="py-20 px-6 relative">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-2">Tentang <span class="text-cyan-400">Saya</span></h2>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-2">Ringkasan <span class="text-cyan-400">Profil</span></h2>
         <div class="w-20 h-1 bg-gradient-to-r from-cyan-400 to-purple-500 mx-auto rounded-full"></div>
       </div>
 
-      <!-- FOTO DI KIRI, TEKS DI KANAN -->
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         
-        <!-- 2x2 Photo Grid (Disebelah Kiri) -->
+        <!-- 2x2 Photo Grid -->
         <div data-aos="fade-right" class="grid grid-cols-2 gap-4 order-2 lg:order-1">
           <div class="relative group overflow-hidden rounded-2xl glass-card p-1">
             <img src="WhatsApp Image 2026-11-03 at 15.25.35 (1).jpeg" alt="Farel Pendakian 1" class="w-full h-48 object-cover rounded-xl transition-transform duration-500 group-hover:scale-110">
@@ -186,28 +198,28 @@
           </div>
         </div>
 
-        <!-- Text About (Disebelah Kanan) -->
+        <!-- Text About & Social Buttons -->
         <div data-aos="fade-left" class="space-y-6 order-1 lg:order-2">
           <h3 class="text-2xl font-bold text-white">
-            Web Developer & Siswa Rekayasa Perangkat Lunak
+            Web Developer & Lulusan SMK Negeri 1 Kawali
           </h3>
           <p class="text-gray-300 leading-relaxed">
-            Saya merupakan siswa jurusan Rekayasa Perangkat Lunak (RPL) yang memiliki minat dan bakat dalam bidang pengembangan website (Web Development). Memiliki kemampuan dasar hingga menengah dalam penggunaan HTML, CSS, JavaScript, serta framework Laravel untuk membangun website yang dinamis dan responsif.
-          </p>
-          <p class="text-gray-300 leading-relaxed">
-            Memiliki ketertarikan dalam mempelajari teknologi baru, memahami pemecahan masalah, serta mengembangkan aplikasi berbasis web. Saya adalah pribadi yang teliti, kreatif, disiplin, dan mampu bekerja secara mandiri maupun dalam tim.
+            Lulusan SMK Negeri 1 Kawali jurusan Rekayasa Perangkat Lunak (RPL) yang memiliki minat dan keahlian di bidang pengembangan website (Web Development). Memiliki kemampuan dasar hingga menengah dalam penggunaan HTML, CSS, JavaScript, serta framework Laravel untuk membangun website yang dinamis dan responsif. Memiliki ketertarikan tinggi dalam mempelajari teknologi baru.
           </p>
           
-          <!-- Badge Keahlian & Lokasi -->
+          <!-- Tombol Sosial (GitHub, LinkedIn, Instagram, Lokasi) -->
           <div class="pt-2 flex flex-wrap gap-3">
-            <span class="px-4 py-2 text-xs font-bold text-cyan-400 bg-cyan-950/60 rounded-full border border-cyan-500/30 shadow-[0_0_10px_rgba(0,242,254,0.15)]">
-              <i class="fa-solid fa-code mr-1.5"></i> Web Developer
-            </span>
-            <span class="px-4 py-2 text-xs font-bold text-purple-400 bg-purple-950/60 rounded-full border border-purple-500/30 shadow-[0_0_10px_rgba(157,78,221,0.15)]">
-              <i class="fa-solid fa-laptop-code mr-1.5"></i> Siswa RPL
-            </span>
-            <span class="px-4 py-2 text-xs font-bold text-blue-400 bg-blue-950/60 rounded-full border border-blue-500/30 shadow-[0_0_10px_rgba(76,201,240,0.15)]">
-              <i class="fa-solid fa-location-dot mr-1.5"></i> Ciamis, Jabar
+            <a href="https://github.com/alfareldwiseptian" target="_blank" class="px-4 py-2 text-xs font-bold text-cyan-400 bg-cyan-950/60 rounded-full border border-cyan-500/30 hover:bg-cyan-900/50 transition-colors">
+              <i class="fa-brands fa-github mr-1.5"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/mochamad-al-farel-dwi-septian-820808449/" target="_blank" class="px-4 py-2 text-xs font-bold text-blue-400 bg-blue-950/60 rounded-full border border-blue-500/30 hover:bg-blue-900/50 transition-colors">
+              <i class="fa-brands fa-linkedin mr-1.5"></i> LinkedIn
+            </a>
+            <a href="https://www.instagram.com/s3ptnrel_9?vrfl=MTd5NDFrZWV1cHA2cg%3D%3D&utm_source=qr" target="_blank" class="px-4 py-2 text-xs font-bold text-pink-400 bg-pink-950/60 rounded-full border border-pink-500/30 hover:bg-pink-900/50 transition-colors">
+              <i class="fa-brands fa-instagram mr-1.5"></i> Instagram
+            </a>
+            <span class="px-4 py-2 text-xs font-bold text-purple-400 bg-purple-950/60 rounded-full border border-purple-500/30">
+              <i class="fa-solid fa-location-dot mr-1.5"></i> Ciamis, Jawa Barat
             </span>
           </div>
         </div>
@@ -216,7 +228,7 @@
     </div>
   </section>
 
-  <!-- EDUCATION TIMELINE SECTION -->
+  <!-- EDUCATION SECTION -->
   <section id="education" class="py-20 px-6 bg-black/40">
     <div class="max-w-4xl mx-auto">
       <div class="text-center mb-16" data-aos="fade-up">
@@ -224,140 +236,99 @@
         <div class="w-20 h-1 bg-gradient-to-r from-cyan-400 to-purple-500 mx-auto rounded-full"></div>
       </div>
 
-      <div class="relative border-l-2 border-cyan-500/30 ml-4 md:ml-32 space-y-12">
-        <!-- SMK -->
-        <div class="relative pl-8" data-aos="fade-up">
-          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-cyan-400 shadow-[0_0_10px_#00f2fe]"></div>
-          <div class="glass-card p-6 rounded-2xl">
-            <span class="px-3 py-1 text-xs font-bold text-cyan-400 bg-cyan-950/80 rounded-full border border-cyan-500/40">2024 - 2027</span>
-            <h3 class="text-xl font-bold text-white mt-3">SMK Negeri 1 Kawali</h3>
-            <p class="text-sm text-cyan-300 mb-2">Rekayasa Perangkat Lunak (RPL)</p>
-            <p class="text-gray-400 text-sm leading-relaxed">
-              Fokus mendalami pengembangan aplikasi web, logika pemrograman, manajemen basis data SQL, serta pembuatan sistem informasi berbasis PHP dan Laravel.
-            </p>
-          </div>
-        </div>
-
-        <!-- MTs -->
-        <div class="relative pl-8" data-aos="fade-up" data-aos-delay="100">
-          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-purple-400 shadow-[0_0_10px_#9d4edd]"></div>
-          <div class="glass-card p-6 rounded-2xl">
-            <span class="px-3 py-1 text-xs font-bold text-purple-400 bg-purple-950/80 rounded-full border border-purple-500/40">2021 - 2023</span>
-            <h3 class="text-xl font-bold text-white mt-3">MTs Babakan</h3>
-            <p class="text-gray-400 text-sm leading-relaxed mt-2">
-              Aktif dalam kegiatan akademik serta mengembangkan dasar-dasar kedisiplinan dan ilmu pengetahuan umum maupun agama.
-            </p>
-          </div>
-        </div>
-
-        <!-- SD -->
-        <div class="relative pl-8" data-aos="fade-up" data-aos-delay="200">
-          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-400 shadow-[0_0_10px_#4cc9f0]"></div>
-          <div class="glass-card p-6 rounded-2xl">
-            <span class="px-3 py-1 text-xs font-bold text-blue-400 bg-blue-950/80 rounded-full border border-blue-500/40">2015 - 2021</span>
-            <h3 class="text-xl font-bold text-white mt-3">MI PUI Panyingkiran</h3>
-            <p class="text-gray-400 text-sm leading-relaxed mt-2">
-              Menyelesaikan pendidikan tingkat dasar dengan baik di Panyingkiran, Ciamis.
-            </p>
-          </div>
+      <div class="max-w-xl mx-auto" data-aos="fade-up">
+        <div class="glass-card p-8 rounded-2xl relative border-l-4 border-cyan-400">
+          <span class="px-3 py-1 text-xs font-bold text-cyan-400 bg-cyan-950/80 rounded-full border border-cyan-500/40">Juli 2024 - Juni 2027</span>
+          <h3 class="text-2xl font-bold text-white mt-4">SMK Negeri 1 Kawali</h3>
+          <p class="text-base text-cyan-300 font-medium mb-3">Rekayasa Perangkat Lunak (RPL)</p>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Fokus mendalami pengembangan aplikasi web, pemrograman berorientasi objek, manajemen basis data, serta implementasi framework modern untuk membangun sistem perangkat lunak yang andal.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SKILLS SECTION (ONLY 5 SKILLS) -->
+  <!-- SKILLS SECTION -->
   <section id="skills" class="py-20 px-6">
     <div class="max-w-5xl mx-auto">
       <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-2">Keahlian <span class="text-cyan-400">Utama</span></h2>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-2">Kemampuan <span class="text-cyan-400">& Keahlian</span></h2>
         <div class="w-20 h-1 bg-gradient-to-r from-cyan-400 to-purple-500 mx-auto rounded-full"></div>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- HTML -->
-        <div class="glass-card p-6 rounded-2xl transition-transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="50">
-          <div class="flex items-center space-x-4 mb-4">
-            <div class="w-12 h-12 rounded-xl bg-orange-500/20 text-orange-500 flex items-center justify-center text-2xl font-bold">
-              <i class="fa-brands fa-html5"></i>
-            </div>
-            <div>
-              <h3 class="font-bold text-white text-lg">HTML</h3>
-              <span class="text-xs text-gray-400">Struktur Web Semantik</span>
-            </div>
-          </div>
-          <div class="w-full bg-gray-800 rounded-full h-2">
-            <div class="bg-orange-500 h-2 rounded-full shadow-[0_0_8px_#f97316]" style="width: 90%"></div>
-          </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- HARD SKILLS -->
+        <div class="glass-card p-8 rounded-2xl space-y-6" data-aos="fade-right">
+          <h3 class="text-xl font-bold text-cyan-400 flex items-center">
+            <i class="fa-solid fa-code mr-3"></i> Hard Skill
+          </h3>
+          <ul class="space-y-4 text-sm text-gray-300">
+            <li class="flex justify-between items-center border-b border-gray-800 pb-3">
+              <span>HTML & CSS</span>
+              <span class="text-xs font-semibold px-2.5 py-1 rounded bg-cyan-950 text-cyan-300 border border-cyan-500/30">BASIC</span>
+            </li>
+            <li class="flex justify-between items-center border-b border-gray-800 pb-3">
+              <span>PHP & Framework Laravel</span>
+              <span class="text-xs font-semibold px-2.5 py-1 rounded bg-cyan-950 text-cyan-300 border border-cyan-500/30">BASIC</span>
+            </li>
+            <li class="flex justify-between items-center border-b border-gray-800 pb-3">
+              <span>JavaScript</span>
+              <span class="text-xs font-semibold px-2.5 py-1 rounded bg-cyan-950 text-cyan-300 border border-cyan-500/30">BASIC</span>
+            </li>
+            <li class="flex justify-between items-center border-b border-gray-800 pb-3">
+              <span>SQL & Database Management</span>
+              <span class="text-xs font-semibold px-2.5 py-1 rounded bg-cyan-950 text-cyan-300 border border-cyan-500/30">BASIC</span>
+            </li>
+            <li class="flex justify-between items-center border-b border-gray-800 pb-3">
+              <span>Version Control / Git & GitHub</span>
+              <span class="text-xs font-semibold px-2.5 py-1 rounded bg-cyan-950 text-cyan-300 border border-cyan-500/30">BASIC</span>
+            </li>
+            <li class="flex justify-between items-center">
+              <span>Troubleshooting & Debugging Web</span>
+              <span class="text-xs font-semibold px-2.5 py-1 rounded bg-cyan-950 text-cyan-300 border border-cyan-500/30">BASIC</span>
+            </li>
+          </ul>
         </div>
 
-        <!-- CSS -->
-        <div class="glass-card p-6 rounded-2xl transition-transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="100">
-          <div class="flex items-center space-x-4 mb-4">
-            <div class="w-12 h-12 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-2xl font-bold">
-              <i class="fa-brands fa-css3-alt"></i>
-            </div>
-            <div>
-              <h3 class="font-bold text-white text-lg">CSS</h3>
-              <span class="text-xs text-gray-400">Desain & Styling Responsif</span>
-            </div>
+        <!-- SOFT SKILLS & SERTIFIKASI -->
+        <div class="space-y-8" data-aos="fade-left">
+          <!-- SOFT SKILLS -->
+          <div class="glass-card p-8 rounded-2xl space-y-6">
+            <h3 class="text-xl font-bold text-purple-400 flex items-center">
+              <i class="fa-solid fa-users-gear mr-3"></i> Soft Skill
+            </h3>
+            <ul class="space-y-4 text-sm text-gray-300">
+              <li class="flex justify-between items-center border-b border-gray-800 pb-3">
+                <span>Pemecahan Masalah / Problem Solving</span>
+              </li>
+              <li class="flex justify-between items-center border-b border-gray-800 pb-3">
+                <span>Logika Berpikir & Ketelitian</span>
+              </li>
+              <li class="flex justify-between items-center">
+                <span>Kerjasama Tim & Komunikasi</span>
+              </li>
+            </ul>
           </div>
-          <div class="w-full bg-gray-800 rounded-full h-2">
-            <div class="bg-blue-400 h-2 rounded-full shadow-[0_0_8px_#60a5fa]" style="width: 85%"></div>
-          </div>
-        </div>
 
-        <!-- JavaScript -->
-        <div class="glass-card p-6 rounded-2xl transition-transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="150">
-          <div class="flex items-center space-x-4 mb-4">
-            <div class="w-12 h-12 rounded-xl bg-yellow-500/20 text-yellow-400 flex items-center justify-center text-2xl font-bold">
-              <i class="fa-brands fa-js"></i>
-            </div>
-            <div>
-              <h3 class="font-bold text-white text-lg">JavaScript</h3>
-              <span class="text-xs text-gray-400">Interaktivitas Front-end</span>
-            </div>
-          </div>
-          <div class="w-full bg-gray-800 rounded-full h-2">
-            <div class="bg-yellow-400 h-2 rounded-full shadow-[0_0_8px_#facc15]" style="width: 80%"></div>
-          </div>
-        </div>
-
-        <!-- PHP -->
-        <div class="glass-card p-6 rounded-2xl transition-transform hover:-translate-y-2 sm:col-span-1 lg:col-span-1" data-aos="zoom-in" data-aos-delay="200">
-          <div class="flex items-center space-x-4 mb-4">
-            <div class="w-12 h-12 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-2xl font-bold">
-              <i class="fa-brands fa-php"></i>
-            </div>
-            <div>
-              <h3 class="font-bold text-white text-lg">PHP</h3>
-              <span class="text-xs text-gray-400">Pemrograman Backend</span>
-            </div>
-          </div>
-          <div class="w-full bg-gray-800 rounded-full h-2">
-            <div class="bg-indigo-400 h-2 rounded-full shadow-[0_0_8px_#818cf8]" style="width: 85%"></div>
-          </div>
-        </div>
-
-        <!-- Laravel -->
-        <div class="glass-card p-6 rounded-2xl transition-transform hover:-translate-y-2 sm:col-span-2 lg:col-span-2" data-aos="zoom-in" data-aos-delay="250">
-          <div class="flex items-center space-x-4 mb-4">
-            <div class="w-12 h-12 rounded-xl bg-red-500/20 text-red-500 flex items-center justify-center text-2xl font-bold">
-              <i class="fa-brands fa-laravel"></i>
-            </div>
-            <div>
-              <h3 class="font-bold text-white text-lg">Laravel</h3>
-              <span class="text-xs text-gray-400">Framework PHP Modern</span>
-            </div>
-          </div>
-          <div class="w-full bg-gray-800 rounded-full h-2">
-            <div class="bg-red-500 h-2 rounded-full shadow-[0_0_8px_#ef4444]" style="width: 85%"></div>
+          <!-- SERTIFIKASI -->
+          <div class="glass-card p-6 rounded-2xl space-y-4">
+            <h3 class="text-lg font-bold text-blue-400 flex items-center">
+              <i class="fa-solid fa-certificate mr-3"></i> Sertifikasi & Pengalaman
+            </h3>
+            <ul class="space-y-3 text-xs text-gray-300">
+              <li class="flex items-start space-x-2">
+                <i class="fa-solid fa-circle-check text-cyan-400 mt-0.5"></i>
+                <span>Sertifikat Uji Kompetensi Keahlian (UKK) Rekayasa Perangkat Lunak</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS SECTION (3 PROYEK DENGAN GAMBAR SCREENSHOT) -->
+  <!-- PROJECTS SECTION -->
   <section id="projects" class="py-20 px-6 bg-black/40">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-16" data-aos="fade-up">
@@ -366,10 +337,10 @@
       </div>
 
       <div class="grid md:grid-cols-3 gap-8">
-        <!-- Project 1: Company Profile Solusi Koneksi -->
+        <!-- Project 1 -->
         <div class="glass-card rounded-2xl overflow-hidden flex flex-col group" data-aos="fade-up" data-aos-delay="100">
           <div class="h-48 overflow-hidden relative border-b border-gray-800">
-            <img src="companyfrofile.png" alt="company frofile" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <img src="companyfrofile.png" alt="Solusi Koneksi" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
             <span class="absolute top-3 right-3 bg-cyan-500/80 backdrop-blur-md text-white text-xs px-2.5 py-1 rounded-full font-semibold">Laravel</span>
           </div>
           <div class="p-6 flex-1 flex flex-col justify-between">
@@ -387,7 +358,7 @@
           </div>
         </div>
 
-        <!-- Project 2: Aplikasi Data Siswa -->
+        <!-- Project 2 -->
         <div class="glass-card rounded-2xl overflow-hidden flex flex-col group" data-aos="fade-up" data-aos-delay="200">
           <div class="h-48 overflow-hidden relative border-b border-gray-800">
             <img src="datasiswa.png" alt="Aplikasi Data Siswa" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
@@ -408,11 +379,11 @@
           </div>
         </div>
 
-        <!-- Project 3: MyDana -->
+        <!-- Project 3 -->
         <div class="glass-card rounded-2xl overflow-hidden flex flex-col group" data-aos="fade-up" data-aos-delay="300">
           <div class="h-48 overflow-hidden relative border-b border-gray-800">
             <img src="mydana.jpeg" alt="MyDana" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-            <span class="absolute top-3 right-3 bg-blue-500/80 backdrop-blur-md text-white text-xs px-2.5 py-1 rounded-full font-semibold">Finance App</span>
+            <span class="absolute top-3 right-3 bg-blue-500/80 backdrop-blur-md text-white text-xs px-2.5 py-1 rounded-full font-semibold">laravel</span>
           </div>
           <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
@@ -422,7 +393,7 @@
               </p>
             </div>
             <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-800">
-              <span class="text-xs text-gray-300 bg-gray-800 px-2.5 py-1 rounded">Tailwind CSS</span>
+              <span class="text-xs text-gray-300 bg-gray-800 px-2.5 py-1 rounded">Laravel</span>
               <span class="text-xs text-gray-300 bg-gray-800 px-2.5 py-1 rounded">PHP / JS</span>
               <span class="text-xs text-gray-300 bg-gray-800 px-2.5 py-1 rounded">MySQL</span>
             </div>
@@ -432,7 +403,7 @@
     </div>
   </section>
 
-  <!-- CONTACT SECTION (DIRECT WEB GMAIL LINK) -->
+  <!-- CONTACT SECTION -->
   <section id="contact" class="py-20 px-6">
     <div class="max-w-4xl mx-auto">
       <div class="text-center mb-16" data-aos="fade-up">
@@ -451,16 +422,6 @@
             <div>
               <span class="text-xs text-gray-400 block">Email</span>
               <span class="text-sm font-semibold text-white">alfareldwi35@gmail.com</span>
-            </div>
-          </div>
-
-          <div class="glass-card p-5 rounded-xl flex items-center space-x-4">
-            <div class="w-10 h-10 rounded-lg bg-pink-500/20 text-pink-400 flex items-center justify-center text-lg">
-              <i class="fa-brands fa-instagram"></i>
-            </div>
-            <div>
-              <span class="text-xs text-gray-400 block">Instagram</span>
-              <span class="text-sm font-semibold text-white">@mochamadalfarel</span>
             </div>
           </div>
 
